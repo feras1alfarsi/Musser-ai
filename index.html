@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مُيسر — ذكاء المستندات بالذكاء الاصطناعي</title>
+    <meta name="description"
+        content="حوّل المستندات الفوضوية إلى رؤى واضحة وقابلة للتنفيذ مع محرك التحليل بالذكاء الاصطناعي من مُيسّر. اكتشاف المخاطر، التلخيص، واستخراج الالتزامات في ثوانٍ." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">مُيسّر<span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#how-it-works">كيف يعمل</a></li>
+                <li><a href="#features">المميزات</a></li>
+                <li><a href="#use-cases">حالات الاستخدام</a></li>
+                <li><a href="#pricing">الأسعار</a></li>
+                <li><a href="#cta" class="btn btn-primary">ابدأ الآن</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="تبديل القائمة" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <canvas class="particles-canvas" id="particles"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    مدعوم بالذكاء الاصطناعي
+                </div>
+                <h1 class="hero-title">
+                    حوّل المستندات المعقدة إلى
+                    <span class="gradient-text">رؤى واضحة تمامًا</span>
+                </h1>
+                <p class="hero-desc">
+                    النواة العصبية في مُيسّر تقرأ وتفهم وتُلخّص عقودك القانونية وتقاريرك وملفات PDF إلى ملخصات قابلة
+                    للتنفيذ — مع إبراز المخاطر والالتزامات والبيانات الرئيسية في ثوانٍ.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#cta" class="btn btn-glow">ابدأ تجربتك المجانية</a>
+                    <a href="#how-it-works" class="btn btn-outline">← شاهد كيف يعمل</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper"
+                    style="min-height:340px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--navy-700),var(--navy-600));">
+                    <!-- CSS-based neural core visual -->
+                    <svg width="320" height="280" viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Right side (RTL): messy documents -->
+                        <rect x="260" y="60" width="50" height="64" rx="4" fill="rgba(255,255,255,0.07)"
+                            stroke="rgba(255,255,255,0.12)" transform="rotate(12 285 92)" />
+                        <rect x="245" y="80" width="50" height="64" rx="4" fill="rgba(255,255,255,0.05)"
+                            stroke="rgba(255,255,255,0.1)" transform="rotate(-8 270 112)" />
+                        <rect x="255" y="150" width="50" height="64" rx="4" fill="rgba(255,255,255,0.06)"
+                            stroke="rgba(255,255,255,0.11)" transform="rotate(6 280 182)" />
+                        <!-- Connecting lines right -->
+                        <line x1="245" y1="100" x2="200" y2="140" stroke="rgba(212,168,83,0.25)" stroke-width="1.5"
+                            stroke-dasharray="4 4" />
+                        <line x1="240" y1="140" x2="200" y2="140" stroke="rgba(212,168,83,0.2)" stroke-width="1.5"
+                            stroke-dasharray="4 4" />
+                        <line x1="250" y1="180" x2="200" y2="140" stroke="rgba(212,168,83,0.2)" stroke-width="1.5"
+                            stroke-dasharray="4 4" />
+                        <!-- Central neural core -->
+                        <circle cx="160" cy="140" r="42" fill="rgba(212,168,83,0.06)" stroke="rgba(212,168,83,0.3)"
+                            stroke-width="1.5">
+                            <animate attributeName="r" values="42;46;42" dur="4s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="160" cy="140" r="28" fill="rgba(45,212,191,0.08)" stroke="rgba(45,212,191,0.35)"
+                            stroke-width="1">
+                            <animate attributeName="r" values="28;31;28" dur="3s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="160" cy="140" r="8" fill="rgba(212,168,83,0.5)">
+                            <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+                        </circle>
+                        <!-- Neural nodes around core -->
+                        <circle cx="130" cy="110" r="3" fill="rgba(45,212,191,0.6)" />
+                        <circle cx="190" cy="115" r="3" fill="rgba(212,168,83,0.6)" />
+                        <circle cx="140" cy="170" r="3" fill="rgba(212,168,83,0.5)" />
+                        <circle cx="185" cy="165" r="3" fill="rgba(45,212,191,0.5)" />
+                        <line x1="130" y1="110" x2="160" y2="140" stroke="rgba(45,212,191,0.2)" stroke-width="0.8" />
+                        <line x1="190" y1="115" x2="160" y2="140" stroke="rgba(212,168,83,0.2)" stroke-width="0.8" />
+                        <line x1="140" y1="170" x2="160" y2="140" stroke="rgba(212,168,83,0.2)" stroke-width="0.8" />
+                        <line x1="185" y1="165" x2="160" y2="140" stroke="rgba(45,212,191,0.2)" stroke-width="0.8" />
+                        <!-- Connecting lines left -->
+                        <line x1="120" y1="140" x2="80" y2="80" stroke="rgba(45,212,191,0.3)" stroke-width="1.5" />
+                        <line x1="120" y1="140" x2="80" y2="140" stroke="rgba(45,212,191,0.25)" stroke-width="1.5" />
+                        <line x1="120" y1="140" x2="80" y2="200" stroke="rgba(45,212,191,0.25)" stroke-width="1.5" />
+                        <!-- Left side (RTL): organized output -->
+                        <rect x="10" y="65" width="70" height="30" rx="6" fill="rgba(45,212,191,0.1)"
+                            stroke="rgba(45,212,191,0.3)" stroke-width="1" />
+                        <text x="45" y="80" fill="rgba(45,212,191,0.8)" font-size="9" font-family="Inter, sans-serif"
+                            font-weight="600" text-anchor="middle" dominant-baseline="central">ملخص</text>
+                        <rect x="10" y="125" width="70" height="30" rx="6" fill="rgba(212,168,83,0.1)"
+                            stroke="rgba(212,168,83,0.3)" stroke-width="1" />
+                        <text x="45" y="140" fill="rgba(212,168,83,0.8)" font-size="9" font-family="Inter, sans-serif"
+                            font-weight="600" text-anchor="middle" dominant-baseline="central">المخاطر</text>
+                        <rect x="10" y="185" width="70" height="30" rx="6" fill="rgba(45,212,191,0.1)"
+                            stroke="rgba(45,212,191,0.3)" stroke-width="1" />
+                        <text x="45" y="200" fill="rgba(45,212,191,0.8)" font-size="9" font-family="Inter, sans-serif"
+                            font-weight="600" text-anchor="middle" dominant-baseline="central">الالتزامات</text>
+                    </svg>
+                </div>
+                <!-- Floating stat cards -->
+                <div class="floating-card floating-card-1">
+                    <div class="fc-value" data-count="98" data-suffix="%">%0</div>
+                    <div class="fc-label">نسبة الدقة</div>
+                </div>
+                <div class="floating-card floating-card-2">
+                    <div class="fc-value" data-count="50" data-suffix="x">0x</div>
+                    <div class="fc-label">تحليل أسرع</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="text-center">
+                <p class="section-label reveal">كيف يعمل</p>
+                <h2 class="section-title reveal">ثلاث خطوات نحو الوضوح التام</h2>
+                <p class="section-subtitle reveal">ارفع أي مستند. النواة العصبية بالذكاء الاصطناعي تقوم بالعمل الشاق —
+                    وتُقدّم رؤى منظمة وقابلة للتنفيذ في لحظات.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card reveal reveal-delay-1">
+                    <div class="step-icon">📄</div>
+                    <p class="step-number">الخطوة ٠١</p>
+                    <h3 class="step-title">ارفع مستنداتك</h3>
+                    <p class="step-desc">اسحب وأفلت عقودك وتقاريرك وملفاتك القانونية أو أي ملف PDF. ندعم جميع صيغ
+                        المستندات الرئيسية.</p>
+                </div>
+                <div class="step-card reveal reveal-delay-2">
+                    <div class="step-icon">🧠</div>
+                    <p class="step-number">الخطوة ٠٢</p>
+                    <h3 class="step-title">الذكاء الاصطناعي يحلل كل شيء</h3>
+                    <p class="step-desc">النواة العصبية تعالج كل بند وفقرة ونقطة بيانات — وتفهم السياق تمامًا كخبير
+                        بشري.</p>
+                </div>
+                <div class="step-card reveal reveal-delay-3">
+                    <div class="step-icon">✨</div>
+                    <p class="step-number">الخطوة ٠٣</p>
+                    <h3 class="step-title">احصل على رؤى واضحة تمامًا</h3>
+                    <p class="step-desc">استلم ملخصات منظمة مع إبراز المخاطر والالتزامات والمواعيد النهائية والبنود
+                        الرئيسية — جاهزة للتنفيذ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="text-center">
+                <p class="section-label reveal">القدرات</p>
+                <h2 class="section-title reveal">مميزات قوية، بدون أي تعقيد</h2>
+                <p class="section-subtitle reveal">تقنيات ذكاء اصطناعي متقدمة في واجهة بسيطة جدًا يمكن لأي شخص في فريقك
+                    استخدامها.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon gold">⚠️</div>
+                    <h3 class="feature-title">اكتشاف المخاطر</h3>
+                    <p class="feature-desc">اكتشف تلقائيًا المخاطر الخفية والبنود الغامضة والمسؤوليات المحتملة المدفونة
+                        في عقودك.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon teal">📝</div>
+                    <h3 class="feature-title">التلخيص الذكي</h3>
+                    <p class="feature-desc">احصل على ملخصات موجزة ومدركة للسياق لأي مستند — من تقارير ١٠٠ صفحة إلى نقاط
+                        رئيسية مختصرة.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-3">
+                    <div class="feature-icon blue">📋</div>
+                    <h3 class="feature-title">استخراج الالتزامات</h3>
+                    <p class="feature-desc">حدد فورًا من يدين بماذا ومتى. لا تفوّت أي موعد نهائي أو تسليم بعد الآن.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon teal">🔍</div>
+                    <h3 class="feature-title">البحث الدلالي</h3>
+                    <p class="feature-desc">اطرح أسئلة بلغة طبيعية واحصل على إجابات دقيقة مع مراجع المصادر من مكتبة
+                        مستنداتك بالكامل.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon gold">📊</div>
+                    <h3 class="feature-title">التحليل المقارن</h3>
+                    <p class="feature-desc">قارن بين نسخ متعددة أو مستندات متنافسة جنبًا إلى جنب لاكتشاف الاختلافات
+                        والتناقضات بسرعة.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-3">
+                    <div class="feature-icon blue">🔒</div>
+                    <h3 class="feature-title">أمان بمستوى المؤسسات</h3>
+                    <p class="feature-desc">متوافق مع SOC 2، مشفر من طرف إلى طرف. مستنداتك الحساسة لا تغادر بيئتنا
+                        السحابية الآمنة أبدًا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== USE CASES ===== -->
+    <section class="use-cases" id="use-cases">
+        <div class="container">
+            <div class="use-cases-grid">
+                <div class="use-cases-visual reveal">
+                    <div class="mock-scan-line">
+                        <div class="scan-beam"></div>
+                        <div class="mock-line full"></div>
+                        <div class="mock-line full"></div>
+                        <div class="mock-line highlight"></div>
+                        <div class="mock-line medium"></div>
+                        <div class="mock-line full"></div>
+                        <div class="mock-line highlight"></div>
+                        <div class="mock-line short"></div>
+                        <div class="mock-line full"></div>
+                        <div class="mock-line medium"></div>
+                        <div class="mock-line full"></div>
+                        <div class="mock-line highlight"></div>
+                        <div class="mock-line short"></div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <p class="section-label">حالات الاستخدام</p>
+                    <h2 class="section-title">مصمم للمحترفين<br>الذين يعنون العمل</h2>
+                    <ul class="use-case-list">
+                        <li class="use-case-item">
+                            <div class="use-case-icon">⚖️</div>
+                            <div class="use-case-text">
+                                <h4>الفرق القانونية</h4>
+                                <p>راجع العقود أسرع ٥٠ مرة. التقط كل بند مخاطر وموعد نهائي دون قراءة آلاف الصفحات
+                                    يدويًا.</p>
+                            </div>
+                        </li>
+                        <li class="use-case-item">
+                            <div class="use-case-icon">🏦</div>
+                            <div class="use-case-text">
+                                <h4>الخدمات المالية</h4>
+                                <p>أتمت مراجعات الامتثال، واستخرج المصطلحات المالية الرئيسية، وسرّع عمليات العناية
+                                    الواجبة.</p>
+                            </div>
+                        </li>
+                        <li class="use-case-item">
+                            <div class="use-case-icon">🏗️</div>
+                            <div class="use-case-text">
+                                <h4>المشتريات والعمليات</h4>
+                                <p>وحّد مراجعة عقود الموردين، وتتبع الالتزامات عبر مئات الاتفاقيات بسهولة.</p>
+                            </div>
+                        </li>
+                        <li class="use-case-item">
+                            <div class="use-case-icon">🔬</div>
+                            <div class="use-case-text">
+                                <h4>البحث والاستشارات</h4>
+                                <p>استوعب التقارير المطولة فورًا. استخرج النتائج، وقارن المنهجيات، وابنِ المعرفة بشكل
+                                    أسرع.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="text-center">
+                <p class="section-label reveal">الأسعار</p>
+                <h2 class="section-title reveal">أسعار بسيطة وشفافة</h2>
+                <p class="section-subtitle reveal">ابدأ مجانًا وتوسّع مع نمو احتياجاتك في ذكاء المستندات. بدون رسوم
+                    خفية.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Starter -->
+                <div class="price-card reveal reveal-delay-1">
+                    <h3 class="price-name">المبتدئ</h3>
+                    <p class="price-desc">للأفراد الذين يستكشفون تحليل المستندات بالذكاء الاصطناعي.</p>
+                    <div class="price-amount">$0<span>/شهر</span></div>
+                    <p class="price-period">مجاني للأبد</p>
+                    <ul class="price-features">
+                        <li>٥٠ صفحة شهريًا</li>
+                        <li>تلخيص أساسي</li>
+                        <li>٣ رفعات مستندات</li>
+                        <li>دعم عبر البريد الإلكتروني</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">ابدأ مجانًا</a>
+                </div>
+                <!-- Professional -->
+                <div class="price-card featured reveal reveal-delay-2">
+                    <span class="price-badge">الأكثر شعبية</span>
+                    <h3 class="price-name">الاحترافي</h3>
+                    <p class="price-desc">للفرق التي تحتاج قوة مستندات حقيقية.</p>
+                    <div class="price-amount">$79<span>/شهر</span></div>
+                    <p class="price-period">لكل مستخدم، فوترة سنوية</p>
+                    <ul class="price-features">
+                        <li>صفحات غير محدودة</li>
+                        <li>اكتشاف المخاطر والالتزامات</li>
+                        <li>التحليل المقارن</li>
+                        <li>البحث الدلالي</li>
+                        <li>دعم ذو أولوية</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">ابدأ تجربتك المجانية</a>
+                </div>
+                <!-- Enterprise -->
+                <div class="price-card reveal reveal-delay-3">
+                    <h3 class="price-name">المؤسسات</h3>
+                    <p class="price-desc">للمؤسسات ذات المتطلبات المتقدمة.</p>
+                    <div class="price-amount">مخصص</div>
+                    <p class="price-period">مصمم حسب احتياجاتك</p>
+                    <ul class="price-features">
+                        <li>كل ما في الاحترافي</li>
+                        <li>تدريب نموذج ذكاء اصطناعي مخصص</li>
+                        <li>تسجيل دخول موحد وأمان متقدم</li>
+                        <li>وصول عبر API</li>
+                        <li>مدير حساب مخصص</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">تواصل مع المبيعات</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <h2 class="cta-title reveal">مستعد لتغيير طريقة<br>قراءتك للمستندات؟</h2>
+            <p class="cta-desc reveal">انضم إلى آلاف المحترفين الذين يوفرون ساعات كل أسبوع مع تحليل المستندات الذكي من
+                مُيسّر.</p>
+            <a href="#" class="btn btn-glow reveal">ابدأ تجربتك المجانية ←</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo" style="font-size:1.5rem;font-weight:800;">مُيسّر<span
+                            style="color:var(--gold-400);"></span></a>
+                    <p>ذكاء مستندات مدعوم بالذكاء الاصطناعي يحوّل التعقيد إلى وضوح. مصمم للمحترفين الذين لا يمكنهم تحمّل
+                        تفويت أي تفصيل.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>المنتج</h4>
+                    <a href="#features">المميزات</a>
+                    <a href="#pricing">الأسعار</a>
+                    <a href="#">وثائق API</a>
+                    <a href="#">سجل التغييرات</a>
+                </div>
+                <div class="footer-col">
+                    <h4>الشركة</h4>
+                    <a href="#">من نحن</a>
+                    <a href="#">الوظائف</a>
+                    <a href="#">المدونة</a>
+                    <a href="#">تواصل معنا</a>
+                </div>
+                <div class="footer-col">
+                    <h4>القانوني</h4>
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">شروط الخدمة</a>
+                    <a href="#">سياسة ملفات تعريف الارتباط</a>
+                    <a href="#">الأمان</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 مُيسّر. جميع الحقوق محفوظة.</span>
+                <div class="footer-social">
+                    <a href="#" aria-label="تويتر">𝕏</a>
+                    <a href="#" aria-label="لينكدإن">in</a>
+                    <a href="#" aria-label="جيتهب">⌘</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/12/07/00/20251207002026-IS39ED5E.js" defer></script>
+    
+</body>
+
+</html>
