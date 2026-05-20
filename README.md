@@ -107,7 +107,7 @@ If you use VS Code, install the **Live Server** extension and click *Go Live* fo
 - **Botpress Webchat** — Live chat widget embedded via CDN scripts at the bottom of `index.html`
 
 ---
-
+chick out: https://feras1alfarsi.github.io/Musser-ai/
 ## 📃 License
 
 This project is licensed under the [MIT License](LICENSE).
